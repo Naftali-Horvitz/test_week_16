@@ -1,6 +1,15 @@
 from connection import get_col
 import re
 from fastapi import HTTPException
+import json
+
+def load_file():
+    mycol = get_col()
+    with open("employee_data_advanced.json", 'r') as file:
+        data = json.load(file)
+    mycol.insert_many(data)
+
+
 
 def get_engineering_high_salary_employees():
     try:

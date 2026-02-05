@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: naftali96/week16:v6
+        image: naftali96/week16:v17
         ports:
         - containerPort: 8000
         env:
@@ -26,11 +26,3 @@ spec:
           value: mongo-0.mongo
         - name: MONGO_PORT
           value: "27017"
-        - name: MONGO_USERNAME
-          value: admin
-        - name: MONGO_PASSWORD
-          value: secretpass
-        - name: MONGO_DB
-          value: db
-        - name: MONGO_AUTH_SOURCE
-          value: admin
