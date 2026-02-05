@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: naftali96/week16:v1
+        image: naftali96/week16:v4
         ports:
         - containerPort: 8000
         env:
